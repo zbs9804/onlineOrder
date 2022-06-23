@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!--    这句定义了编码的方式-->
+    <title>title就是网站在浏览器tab上的的标签，其余的head块用户不可见</title>
+    <meta name="keywords" content="free air,traveling,searching related things">
+    <meta name="description" content="">
+    <!--    name是给浏览器用的，description实际是给爬虫用的-->
+</head>
+
+<body>
+    <h1>hello world你好世界</h1>
+    <!--h1到h6字体大小递减-->
+    <ul>
+        <li>
+            <a href = "#HISTORY"  >1. history </a></li>
+            <!--        井号代表在当前页面进行跳转，id不允许重复，不然不知道跳到那-->
+        <li>2. syntax</li>
+        <li>3. filters</li>
+    </ul>
+
+
+    <p>
+        <p style = "color: green";/>
+        <h3>p是段落标签</h3>
+        直接写也可以被用户看见，但不建议这么写...<span>span内容方便单独设计样式</span><br />
+        <!--h1-6，div，p是block element，会独占一行，span是inline element是不换行的，所以更灵活，可以对部分文本做样式设计。-->
+<!--        什么是element？标签+内容。不同的block会换行，inline的大小由内容决定，而inline block可以设定大小，比如img-->
+        <ul type="square">
+            <li>apple</li>
+            <li>orange</li>
+        <!--    ul是标签列表，例子：navigation bar，li是列表中的标签-->
+        </ul>
+        <ol>
+            <li>apple</li>
+            <li>orange</li>
+        <!--    ol是排序的标签，但也要跟li配合用-->
+        </ol>
+        <a href="https:www.laicode.io" target="blank">
+        <!--        href是目标网址，target=blank代表到一个新的tab打开目标网页-->
+        <li>不让我刷题，那还不如让我去死</li>
+        </a>
+        <img src="https://s3-media0.fl.yelpcdn.com/bphoto/I5B8PHAjzrI9IqTdFJaZBw/300s.jpg" alt=""/>
+        <div>
+            <div>
+                <h2 id="HISTORY"> 刷题历史<br/>
+                    \Apache Tomcat\apache-tomcat-9.0.64\bin\catalina.bat" run
+                    [2022-06-19 05:48:43,885] Artifact onlineOrder:war exploded: Waiting for server connection to start artifact deployment...
+                    Using CATALINA_BASE:   "C:\Users\zbs\AppData\Local\JetBrains\IntelliJIdea2022.1\tomcat\f49a0e04-9ceb-4086-8796-4380e713f28c"
+                    Using CATALINA_HOME:   "E:\softwares\IntelliJ\Apache Tomcat\apache-tomcat-9.0.64"
+                    Using CATALINA_TMPDIR: "E:\softwares\IntelliJ\Apache Tomcat\apache-tomcat-9.0.64\temp"
+                    Using JRE_HOME:        "C:\Program Files\Java\jdk1.8.0_321"
+                    Using CLASSPATH:       "E:\softwares\IntelliJ\Apache Tomcat\apache-tomcat-9.0.64\bin\bootstrap.jar;E:\softwares\IntelliJ\Apache Tomcat\apache-tomcat-9.0.64\bin\tomcat-juli.jar"
+                    Using CATALINA_OPTS:   ""
+                    19-Jun-2022 17:48:46.551 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server.服务器版本: Apache Tomcat/9.0.64
+                    19-Jun-2022 17:48:46.555 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 服务器构建:        Jun 2 2022 19:08:46 UTC
+                    19-Jun-2022 17:48:46.555 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 服务器版本号:      9.0.64.0
+                    19-Jun-2022 17:48:46.555 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 操作系统名称:      Windows 10
+                    19-Jun-2022 17:48:46.555 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS.版本:           10.0
+                    19-Jun-2022 17:48:46.555 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 架构:              amd64
+                    19-Jun-2022 17:48:46.555 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java 环境变量:     C:\Program Files\Java\jdk1.8.0_321\jre
+                    19-Jun-2022 17:48:46.555 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java虚拟机版本:    1.8.0_321-b07
+                    19-Jun-2022 17:48:46.555 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM.供应商:        Oracle Corporation
+                    19-Jun-2022 17:48:46.555 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:     C:\Users\zbs\AppData\Local\JetBrains\IntelliJIdea2022.1\tomcat\f49a0e04-9ceb-4086-8796-4380e713f28c
+                    19-Jun-2022 17:48:46.555 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:     E:\softwares\IntelliJ\Apache Tomcat\apache-tomcat-9.0.64
+                    19-Jun-2022 17:48:46.555 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.util.logging.config.file=C:\Users\zbs\AppData\Local\JetBrains\IntelliJIdea2022.1\tomcat\f49a0e04-9ceb-4086-8796-4380e713f28c\conf\logging.properties
+                    19-Jun-2022 17:48:46.555 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+                    19-Jun-2022 17:48:46.555 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dcom.sun.management.jmxremote=
+                    19-Jun-2022 17:48:46.555 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dcom.sun.management.jmxremote.port=1099
+                    19-Jun-2022 17:48:46.555 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dcom.sun.management.jmxremote.ssl=false
+                    19-Jun-2022 17:48:46.555 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dcom.sun.management.jmxremote.password.file=C:\Users\zbs\AppData\Local\JetBrains\IntelliJIdea2022.1\tomcat\f49a0e04-9ceb-4086-8796-4380e713f28c\jmxremote.password
+                    19-Jun-2022 17:48:46.555 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dcom.sun.management.jmxremote.access.file=C:\Users\zbs\AppData\Local\JetBrains\IntelliJIdea2022.1\tomcat\f49a0e04-9ceb-4086-8796-4380e713f28c\jmxremote.access
+                    19-Jun-2022 17:48:46.555 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.rmi.server.hostname=127.0.0.1
+                    19-Jun-2022 17:48:46.555 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djdk.tls.ephemeralDHKeySize=2048
+                    19-Jun-2022 17:48:46.555 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+                    19-Jun-2022 17:48:46.555 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dignore.endorsed.dirs=
+                    19-Jun-2022 17:48:46.556 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dcatalina.base=C:\Users\zbs\AppData\Local\JetBrains\IntelliJIdea2022.1\tomcat\f49a0e04-9ceb-4086-8796-4380e713f28c
+                    19-Jun-2022 17:48:46.556 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dcatalina.home=E:\softwares\IntelliJ\Apache Tomcat\apache-tomcat-9.0.64
+                    19-Jun-2022 17:48:46.556 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.io.tmpdir=E:\softwares\IntelliJ\Apache Tomcat\apache-tomcat-9.0.64\temp
+                    19-Jun-2022 17:48:46.644 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 使用APR版本[1.7.0]加载了基于APR的Apache Tomcat本机库[1.2.33]。
+                    19-Jun-2022 17:48:46.644 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR功能：IPv6[true]、sendfile[true]、accept filters[false]、random[true]、UDS [true]。
+                    19-Jun-2022 17:48:46.644 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent APR/OpenSSL配置：useAprConnector[false]，useOpenSSL[true]
+                    19-Jun-2022 17:48:46.649 信息 [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL成功初始化 [OpenSSL 1.1.1o  3 May 2022]
+                    19-Jun-2022 17:48:47.027 信息 [main] org.apache.coyote.AbstractProtocol.init 初始化协议处理器 ["http-nio-8080"]
+                    19-Jun-2022 17:48:47.043 信息 [main] org.apache.catalina.startup.Catalina.load 服务器在[727]毫秒内初始化
+                    19-Jun-2022 17:48:47.073 信息 [main] org.apache.catalina.core.StandardService.startInternal 正在启动服务[Catalina]
+                    19-Jun-2022 17:48:47.073 信息 [main] org.apache.catalina.core.StandardEngine.startInternal 正在启动 Servlet 引擎：[Apache Tomcat/9.0.64]
+                    19-Jun-2022 17:48:47.081 信息 [main] org.apache.coyote.AbstractProtocol.start 开始协议处理句柄["http-nio-8080"]
+                    19-Jun-2022 17:48:47.115 信息 [main] org.apache.catalina.startup.Catalina.start [71]毫秒后服务器启动
+                    Connected to server
+                    [2022-06-19 05:48:47,276] Artifact onlineOrder:war exploded: Artifact is being deployed, please wait...
+                    19-Jun-2022 17:48:48.039 信息 [RMI TCP Connection(2)-127.0.0.1] org.apache.jasper.servlet.TldScanner.scanJars 至少有一个JAR被扫描用于TLD但尚未包含TLD。 为此记录器启用调试日志记录，以获取已扫描但未在其中找到TLD的完整JAR列表。 在扫描期间跳过不需要的JAR可以缩短启动时间和JSP编译时间。
+                    [2022-06-19 05:48:48,135] Artifact onlineOrder:war exploded: Artifact is deployed successfully
+                    [2022-06-19 05:48:48,135] Artifact onlineOrder:war exploded: Deploy took 859 milliseconds
+                    19-Jun-2022 17:48:57.108 信息 [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [E:\softwares\IntelliJ\Apache Tomcat\apache-tomcat-9.0.64\webapps\manager]
+                    19-Jun-2022 17:48:57.238 信息 [Catalina-utility-1] org.apache.catalina.startup.HostConfig.deployDirectory Web应用程序目录[E:\softwares\IntelliJ\Apache Tomcat\apache-tomcat-9.0.64\webapps\manager]的部署已在[130]毫秒内完成
+                    "E:\softwares\IntelliJ\Apache Tomcat\apache-tomcat-9.0.64\bin\catalina.bat" stop
+                    Using CATALINA_BASE:   "C:\Users\zbs\AppData\Local\JetBrains\IntelliJIdea2022.1\tomcat\f49a0e04-9ceb-4086-8796-4380e713f28c"
+                    Using CATALINA_HOME:   "E:\softwares\IntelliJ\Apache Tomcat\apache-tomcat-9.0.64"
+                    Using CATALINA_TMPDIR: "E:\softwares\IntelliJ\Apache Tomcat\apache-tomcat-9.0.64\temp"
+                    Using JRE_HOME:        "C:\Program Files\Java\jdk1.8.0_321"
+                    Using CLASSPATH:       "E:\softwares\IntelliJ\Apache Tomcat\apache-tomcat-9.0.64\bin\bootstrap.jar;E:\softwares\IntelliJ\Apache Tomcat\apache-tomcat-9.0.64\bin\tomcat-juli.jar"
+                    Using CATALINA_OPTS:   ""
+                    19-Jun-2022 17:49:01.881 信息 [main] org.apache.catalina.core.StandardServer.await 通过关闭端口接收到有效的关闭命令。正在停止服务器实例。
+                    19-Jun-2022 17:49:01.882 信息 [main] org.apache.coyote.AbstractProtocol.pause 暂停ProtocolHandler["http-nio-8080"]
+                    19-Jun-2022 17:49:02.145 信息 [main] org.apache.catalina.core.StandardService.stopInternal 正在停止服务[Catalina]
+                    19-Jun-2022 17:49:02.160 信息 [main] org.apache.coyote.AbstractProtocol.stop 正在停止ProtocolHandler ["http-nio-8080"]
+                    19-Jun-2022 17:49:02.173 信息 [main] org.apache.coyote.AbstractProtocol.destroy 正在摧毁协议处理器 ["http-nio-8080"]
+                    Disconnected from server</h2>
+<!--                div只是用于划分区域，division-->
+            </div>
+        </div>
+    </p>
+
+</body>
+
+</html>
