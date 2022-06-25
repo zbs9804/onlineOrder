@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+      /*div {*/
+      /*    width: 500px;*/
+      /*    height: 500px;*/
+      /*    border: 5px solid pink;*/
+      /*    padding: 50px;*/
+      /*    margin: 10px;*/
+      /*    !*margin指定box左边的宽度，右边够不到底的全算上*!*/
+      /*    box-sizeng: border-box;ie标准*/
+      /*    box-sizing: content-box;W3C标准*/
+      /*}*/
+      .rl{
+          width:200px;
+          height:100px;
+          background-color:#ccc;
+          position: relative;
+      }
+      .common{
+          weight: 200px;
+          height: 100px;
+          background-color: lightblue;
+          position: fixed;
+          top: 0;
+          right:0;
+      }
+      .abs{
+          width:300px;
+          height:300px;
+          background-color:lightgreen;
+          position: absolute;
+      }
+      .parent{
+          width:500px;
+          height:500px;
+          border: 2px solid red;
+          position:relative;
+      }
+      .top{
+          left:50px;
+          top: 50px;
+          background-color: pink;
+          z-index: 3;
+      }
+      .mid{
+          left:60px;
+          top:90px;
+          background-color: brown;
+          z-index: 2;
+      }
+      .butt{
+          left:20px;
+          top: 30px;
+          background-color: grey;
+          z-index: 1;
+      }
+  </style>
+</head>
+
+<body>
+
+<div class="parent">
+    <div class = "abs">
+        xxxxx - abs positioning
+<!--        绝对定位的定位方法：会向父级元素找定位元素position，如果找到了，就把这个父级元素作为定位基准，找不到就以body定位。-->
+<!--        一般是把parent定义成relative，子级元素是abs，这样做可以定义小图标在parent里的位置，比如搜索框的放大镜按钮-->
+    </div>
+</div>
+
+<div class="common">
+    common box content fixed position
+</div>
+
+<div class = "relative">
+    xxxxx - rel positioning
+</div>
+
+<!--用于演示z-index：-->
+<div class = "abs top">top</div>
+<div class = "abs mid">mid</div>
+<div class = "abs butt">butt</div>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+</body>
+</html>
