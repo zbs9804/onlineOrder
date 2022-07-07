@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+<!--    style的就不管了，这是css的内容，跟js无关，js是做交互的-->
+<!--    <script type = "text/javascript">-->
+<!--        console.log(1);-->
+<!--            internal引入js的方式-->
+<!--    </script>-->
+
+    <script type = "text/javascript" src = "./myjs.js"></script>
+<!--    推荐external的方式，用script标签引入外部的js文件，更好的文件分离-->
+
+</head>
+<body>
+
+<!--<h1 class = "box" onclick = "window.alert('hello!')"> js demo</h1>-->
+<!--inline法，这种不怎么用-->
+
+<script>
+     //js / html / css
+     // 变量：js有数据类型，但是弱类型语言，统统用var来定义，数据类型动态由赋值类型决定，字符串单双引号不分
+     //    primitive： Number， String， Boolean
+     //    reference：Object，Array，Function
+     // 两个特殊值：undefined和null
+     //    undefined是声明一切变量的初始值，如果不人为初始化，那么就统统叫undefined，但不意味着你可以调用未定义的变量，那叫Not Defined
+     //    还有一个特殊值null，用于告诉gc回收此变量，以及其他的功能
+     //    undefined + undefined = NaN(not a number), undefined + any type = string
+</script>
+</body>
+</html>
