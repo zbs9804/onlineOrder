@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            height: 100px;
+            width: 100px;
+            background-color: lightblue;
+        }
+    </style>
+</head>
+<body>
+
+<h1>event</h1>
+
+<div class = "box"></div>
+
+<script>
+//
+     var oDiv = document.getElementsByClassName('box')[0];//在console输入console.dir(oDiv)可以看oDiv下面的所有属性
+
+//     oDiv.onclick = function() {//这种叫句柄绑定方式，如果两个事件处理同时存在，最后的那个会覆盖之前的，console不会管之前的一切代码
+//         oDiv.style.backgroundColor = "red";//点一下就变红
+//         console.log("clicked");
+//     }
+// //下面是另一种加event listener的方法，区别是颜色仍然会覆盖，但console不会
+//     oDiv.addEventListener('click', function(){
+//         oDiv.style.backgroundColor = "green";
+//         console.log("listener1");
+//     }, false);//第一个参数表示事件类型，第二个是处理函数，第三个是是否冒泡
+//     oDiv.addEventListener('click', function(){
+//         oDiv.style.backgroundColor = "orange";
+//         console.log("listener2");
+//     }, false);
+        // 下面演示了事件对象
+    oDiv.addEventListener('click', function fn(e){//e是browser传给我的事件对象，里面有一系列事件的属性
+        console.log(e);//在browser的console里就可以看到所有事件对象的属性
+        console.log(e.target);//target是最重要的属性之一，返回事件发生的位置
+        oDiv.style.backgroundColor = "red";
+    }, false);
+</script>
+</body>
+</html>

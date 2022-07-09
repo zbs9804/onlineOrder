@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script type = "text/javascript">
+    //callback func很重要
+    //js是单线程的，主要是为了防止用户交互混乱。通过回调函数实现异步
+    //回调函数作为参数传入到另一个函数
+    function fn(parame)//函数的参数类型可以是任意
+    {
+        console.log(parame);
+    }
+    function add()
+    {
+        console.log("add fn");
+    }
+    var add1 = function()
+    {
+        console.log("add1 fn");
+    }
+    fn(1);//num类型
+    fn({a:1,b:"vvv"});//obj类型
+    fn(add);//函数类型。打印出add函数的声明，add就是callback func
+    fn(add1);//传入函数的地址
+    fn(add());//打印函数的返回结果，也就是undefined
+    fn(fn);//fn指向函数定义，打印出函数定义
+    fn(fn(fn));//fn(fn)返回fn函数的返回值，也就是undefined
+
+    console.log("------------------------------");
+
+    function cal(a, b, type)
+    {
+        if(type === "+")
+            console.log(a + b);
+        else if(type === "-")
+            console.log(a - b);
+        else
+            console.log(a, b);
+    }
+    cal(1, 2, "+");//3
+    cal(5, 8);//5 8
+    function add(a,b)
+    {
+        console.log(a + b);
+    }
+    function minus(a,b)
+    {
+        console.log(a - b);
+    }
+    function mul(a,b)
+    {
+        console.log(a * b);
+    }
+    function call(a, b, callbck)//传给callbck一个函数，实现func call，这么写相对于前者来说更好地解耦合
+    {
+        if(typeof callbck === "function")
+            callbck(a,b);
+    }
+    call(2,3,add);//和直接call add一样的结果
+    // function cal2(callbck)
+    // {
+    //     console.log("cal2");
+    //     return callbck;
+    // }
+    var arr = [6,8,1,5,0,3,7];
+    arr.sort(function(a,b){
+        return a - b;//类似java的comparator，这就是callback的用法
+    })
+    console.log(arr);
+</script>
+</body>
+</html>
